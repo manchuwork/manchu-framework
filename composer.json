@@ -1,12 +1,12 @@
 {
-    "name": "wanglelecc\/laracms-framework",
-    "description": "A LaraCMS Framework.",
+    "name": "manchuwork\/manchu-framework",
+    "description": "manchuwork LaraCMS Framework.",
     "license": "MIT",
     "authors": [
         {
-            "name": "wanglelecc",
-            "email": "wanglelecc@gmail.com",
-            "homepage": "https://www.56br.com",
+            "name": "manchuwork",
+            "email": "manchuwork",
+            "homepage": "http://www.manchu.work",
             "role": "Developer"
         }
     ],

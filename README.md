@@ -1,6 +1,6 @@
-<h1 align="center"> LaraCMS Framework </h1>
+<h1 align="center">Manchu.Work LaraCMS Framework </h1>
 
-<p align="center">  LaraCMS 核心基础框架，配合 LaraCMS 使用。</p>
+<p align="center"> Manchu.work LaraCMS 核心基础框架，配合 LaraCMS 使用。</p>
 
 
 ## 环境需求
