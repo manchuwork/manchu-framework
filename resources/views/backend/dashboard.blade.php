@@ -8,60 +8,60 @@
 
 @section('content')
 
-    <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box bg-info">
-                <div class="info-box-icon">
-                    <i class="icon icon-file-text"></i>
-                </div>
-                <div class="info-box-content">
-                    <span class="info-box-text">新增订单</span>
-                    <span class="info-box-number">320
+    {{--<div class="row">--}}
+        {{--<div class="col-md-3 col-sm-6 col-xs-12">--}}
+            {{--<div class="info-box bg-info">--}}
+                {{--<div class="info-box-icon">--}}
+                    {{--<i class="icon icon-file-text"></i>--}}
+                {{--</div>--}}
+                {{--<div class="info-box-content">--}}
+                    {{--<span class="info-box-text">XXX指标</span>--}}
+                    {{--<span class="info-box-number">***--}}
                         {{--<small>单</small>--}}
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box bg-primary">
-                <div class="info-box-icon">
-                    <i class="icon icon-user"></i>
-                </div>
-                <div class="info-box-content">
-                    <span class="info-box-text">新增用户</span>
-                    <span class="info-box-number">90
+                    {{--</span>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="col-md-3 col-sm-6 col-xs-12">--}}
+            {{--<div class="info-box bg-primary">--}}
+                {{--<div class="info-box-icon">--}}
+                    {{--<i class="icon icon-user"></i>--}}
+                {{--</div>--}}
+                {{--<div class="info-box-content">--}}
+                    {{--<span class="info-box-text">XXX指标</span>--}}
+                    {{--<span class="info-box-number">***--}}
                         {{--<small>个</small>--}}
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box bg-warning">
-                <div class="info-box-icon">
-                    <i class="icon icon-bars"></i>
-                </div>
-                <div class="info-box-content">
-                    <span class="info-box-text">在售商品</span>
-                    <span class="info-box-number">129
+                    {{--</span>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="col-md-3 col-sm-6 col-xs-12">--}}
+            {{--<div class="info-box bg-warning">--}}
+                {{--<div class="info-box-icon">--}}
+                    {{--<i class="icon icon-bars"></i>--}}
+                {{--</div>--}}
+                {{--<div class="info-box-content">--}}
+                    {{--<span class="info-box-text">XXX指标</span>--}}
+                    {{--<span class="info-box-number">129--}}
                         {{--<small>种</small>--}}
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box bg-danger">
-                <div class="info-box-icon">
-                    <i class="icon icon-eye-open"></i>
-                </div>
-                <div class="info-box-content">
-                    <span class="info-box-text">库存预警</span>
-                    <span class="info-box-number">66
+                    {{--</span>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="col-md-3 col-sm-6 col-xs-12">--}}
+            {{--<div class="info-box bg-danger">--}}
+                {{--<div class="info-box-icon">--}}
+                    {{--<i class="icon icon-eye-open"></i>--}}
+                {{--</div>--}}
+                {{--<div class="info-box-content">--}}
+                    {{--<span class="info-box-text">XXX报警</span>--}}
+                    {{--<span class="info-box-number">66--}}
                         {{--<small>元</small>--}}
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
+                    {{--</span>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
 
     <div class="row">
         <div class="col-md-6">
@@ -73,7 +73,7 @@
                     <table class="table table-info">
                         <tr>
                             <td width="100">产品名称</td>
-                            <td><a target="_blank" href="https://www.laracms.cn">LaraCMS</a></td>
+                            <td><a target="_blank" href="https://www.manchu.work">Manchu.Work LaraCMS</a></td>
                         </tr>
                         <tr>
                             <td>核心框架</td>
@@ -81,7 +81,7 @@
                         </tr>
                         <tr>
                             <td>开发作者</td>
-                            <td><a target="_blank" href="https://github.com/wanglelecc">Wanglelecc（稀饭不加糖）</a></td>
+                            <td><a target="_blank" href="https://github.com/manchuwork">manchuwork</a></td>
                         </tr>
 
                         <tr>

@@ -31,12 +31,12 @@ $currentChildNavigations = frontend_current_child_navigation('desktop');
             @guest
             <li class="layui-nav-item"><a href="{{route('login')}}">登录</a></li>
             <li class="layui-nav-item"><a href="{{route('register')}}">注册</a></li>
-            <li class="layui-nav-item layui-hide-xs">
-                <a href="{{route('oauth.login','qq')}}" onclick="layer.msg('正在通过QQ登录', {icon:16, shade: 0.1, time:0})" title="QQ登录" class="iconfont icon-qq"></a>
-            </li>
-            <li class="layui-nav-item layui-hide-xs">
-                <a href="{{route('oauth.login','weibo')}}" onclick="layer.msg('正在通过微博登录', {icon:16, shade: 0.1, time:0})" title="微博登录" class="iconfont icon-weibo"></a>
-            </li>
+            {{--<li class="layui-nav-item layui-hide-xs">--}}
+                {{--<a href="{{route('oauth.login','qq')}}" onclick="layer.msg('正在通过QQ登录', {icon:16, shade: 0.1, time:0})" title="QQ登录" class="iconfont icon-qq"></a>--}}
+            {{--</li>--}}
+            {{--<li class="layui-nav-item layui-hide-xs">--}}
+                {{--<a href="{{route('oauth.login','weibo')}}" onclick="layer.msg('正在通过微博登录', {icon:16, shade: 0.1, time:0})" title="微博登录" class="iconfont icon-weibo"></a>--}}
+            {{--</li>--}}
             <li class="layui-nav-item layui-hide-xs">
                 <a href="{{route('oauth.login','github')}}" onclick="layer.msg('正在通过Github登录', {icon:16, shade: 0.1, time:0})" title="Github登录" class="iconfont icon-github"></a>
             </li>
