@@ -29,32 +29,32 @@
                             {{ csrf_field() }}
                             <input type="hidden" name="_method" class="mini-hidden" value="PATCH">
 
-                            @if(!$user->phone)
-                            <div class="layui-form-item">
-                                <label for="L_email" class="layui-form-label">手机</label>
-                                <div class="layui-input-inline">
-                                    <input type="text" id="L_phone" name="phone" required="" lay-verify="phone" autocomplete="off" value="{{ old('phone', $user->phone) }}" placeholder="请输入手机号" class="layui-input">
-                                </div>
-                                <div class="layui-form-mid layui-word-aux">您需要完成手机验证</div>
-                            </div>
-                            <div class="layui-form-item">
-                                <label for="L_vercode" class="layui-form-label">验证码</label>
-                                <div class="layui-input-inline">
-                                    <input type="text" id="L_vercode" name="verification_code" required="" lay-verify="required" placeholder="请输入手机验证码" autocomplete="off" class="layui-input">
-                                </div>
-                                <div class="layui-form-mid" style="padding: 0!important;">
-                                    <button type="button" class="layui-btn layui-btn-normal" id="FLY-getvercode">获取验证码</button>
-                                </div>
-                            </div>
-                            @else
-                            <div class="layui-form-item">
-                                <label for="L_email" class="layui-form-label">手机</label>
-                                <div class="layui-input-inline">
-                                    <input type="text" id="L_phone" name="" disabled="disabled" required="" lay-verify="phone" autocomplete="off" value="{{ old('phone',$user->phone) }}" placeholder="请输入手机号" class="layui-input">
-                                </div>
-                                <div class="layui-form-mid layui-word-aux"><span style="color: #5FB878">您已完成手机号绑定。</span> 手机号暂不支持修改。</div>
-                            </div>
-                            @endif
+                            {{--@if(!$user->phone)--}}
+                            {{--<div class="layui-form-item">--}}
+                                {{--<label for="L_email" class="layui-form-label">手机</label>--}}
+                                {{--<div class="layui-input-inline">--}}
+                                    {{--<input type="text" id="L_phone" name="phone" required="" lay-verify="phone" autocomplete="off" value="{{ old('phone', $user->phone) }}" placeholder="请输入手机号" class="layui-input">--}}
+                                {{--</div>--}}
+                                {{--<div class="layui-form-mid layui-word-aux">您需要完成手机验证</div>--}}
+                            {{--</div>--}}
+                            {{--<div class="layui-form-item">--}}
+                                {{--<label for="L_vercode" class="layui-form-label">验证码</label>--}}
+                                {{--<div class="layui-input-inline">--}}
+                                    {{--<input type="text" id="L_vercode" name="verification_code" required="" lay-verify="required" placeholder="请输入手机验证码" autocomplete="off" class="layui-input">--}}
+                                {{--</div>--}}
+                                {{--<div class="layui-form-mid" style="padding: 0!important;">--}}
+                                    {{--<button type="button" class="layui-btn layui-btn-normal" id="FLY-getvercode">获取验证码</button>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                            {{--@else--}}
+                            {{--<div class="layui-form-item">--}}
+                                {{--<label for="L_email" class="layui-form-label">手机</label>--}}
+                                {{--<div class="layui-input-inline">--}}
+                                    {{--<input type="text" id="L_phone" name="" disabled="disabled" required="" lay-verify="phone" autocomplete="off" value="{{ old('phone',$user->phone) }}" placeholder="请输入手机号" class="layui-input">--}}
+                                {{--</div>--}}
+                                {{--<div class="layui-form-mid layui-word-aux"><span style="color: #5FB878">您已完成手机号绑定。</span> 手机号暂不支持修改。</div>--}}
+                            {{--</div>--}}
+                            {{--@endif--}}
 
                             <div class="layui-form-item">
                                 <label for="L_email" class="layui-form-label">邮箱</label>
