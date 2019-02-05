@@ -31,11 +31,11 @@ class SeedSettingsData extends Migration
         Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'basic', 'key' => 'status', 'value' => '0']);
         Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'basic', 'key' => 'close_tips', 'value' => '非常抱歉，站点正在维护，稍后恢复...']);
         Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'basic', 'key' => 'name', 'value' => config('app.name')]);
-        Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'basic', 'key' => 'copyright', 'value' => 'LaraCMS']);
+        Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'basic', 'key' => 'copyright', 'value' => 'Manchu.Wrok']);
         Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'basic', 'key' => 'create_year', 'value' => date('Y')]);
-        Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'basic', 'key' => 'keywords', 'value' => 'LaraCMS']);
+        Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'basic', 'key' => 'keywords', 'value' => 'manchuwork']);
         Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'basic', 'key' => 'index_keywords', 'value' => '']);
-        Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'basic', 'key' => 'slogan', 'value' => '']);
+        Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'basic', 'key' => 'slogan', 'value' => '满族空间']);
         Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'basic', 'key' => 'icp', 'value' => '']);
         Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'basic', 'key' => 'icp_link', 'value' => '']);
         Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'basic', 'key' => 'meta', 'value' => '']);
@@ -48,15 +48,15 @@ class SeedSettingsData extends Migration
         Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'company', 'key' => 'content', 'value' => '']);
 
         // 联系方式
-        Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'contact', 'key' => 'contacts', 'value' => 'Wanglelecc']);
+        Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'contact', 'key' => 'contacts', 'value' => 'manchuwork']);
         Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'contact', 'key' => 'phone', 'value' => '13300000000']);
         Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'contact', 'key' => 'fax', 'value' => '']);
-        Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'contact', 'key' => 'email', 'value' => 'wanglelecc@gmail.com']);
+        Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'contact', 'key' => 'email', 'value' => 'manchu@163.com']);
         Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'contact', 'key' => 'qq', 'value' => '0000000']);
         Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'contact', 'key' => 'weixin', 'value' => '']);
         Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'contact', 'key' => 'weibo', 'value' => '']);
         Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'contact', 'key' => 'wangwang', 'value' => '']);
-        Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'contact', 'key' => 'site', 'value' => 'https://www.wanglele.cc/']);
+        Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'contact', 'key' => 'site', 'value' => 'https://www.manchu.work/']);
         Setting::create(['owner' => 'system', 'module' => 'common', 'section' => 'contact', 'key' => 'address', 'value' => 'Beijing']);
 
 
