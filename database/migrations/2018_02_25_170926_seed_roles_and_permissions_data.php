@@ -119,9 +119,9 @@ class SeedRolesAndPermissionsData extends Migration
         // 创建管理员账户
         $user = User::create([
             'name' => 'admin',
-            'email' => 'admin@56br.com',
+            'email' => 'admin@manchu.work',
             'status' => '1',
-            'password' => bcrypt('123456'),
+            'password' => bcrypt('admin'),
             'avatar' => 'images/avatar/201803/04/9CT3XvX0Jcv8QEEzPCzgg8k0NXJVwrMsaKKf1iN9.jpeg',
         ]);
         
