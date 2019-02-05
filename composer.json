@@ -1,11 +1,11 @@
 {
-    "name": "manchuwork\/manchu-framework",
+    "name": "manchuwork/manchu-framework",
     "description": "manchuwork LaraCMS Framework.",
     "license": "MIT",
     "authors": [
         {
             "name": "manchuwork",
-            "email": "manchuwork",
+            "email": "manchuwork@163.com",
             "homepage": "http://www.manchu.work",
             "role": "Developer"
         }
