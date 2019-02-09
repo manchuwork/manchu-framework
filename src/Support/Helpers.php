@@ -284,7 +284,7 @@ if( !function_exists("frontend_view") ){
     {
         $args = func_get_args();
         $args[0] = 'frontend::'.$name;
-        
+
         return view(...$args);
     }
 }
