@@ -15,7 +15,7 @@
 
 return [
     'desktop' => 'customize',
-    'mobile' => 'customize', // default mobile
+    'mobile' => 'mobile', // default mobile
 
     'template' => [
         'page' => [
