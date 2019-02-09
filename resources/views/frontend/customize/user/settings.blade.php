@@ -144,26 +144,26 @@
 
                     <div class="layui-form layui-form-pane layui-tab-item">
                         <ul class="app-bind">
-                            <li class="fly-msg @if($user->qq_id) app-havebind @endif">
-                                <i class="iconfont icon-qq"></i>
-                                @if($user->qq_id)
-                                <span>已成功绑定，您可以使用QQ帐号直接登录，当然，您也可以</span>
-                                <a href="{{route('oauth.login.unbind', 'qq')}}" class="acc-unbind" type="qq_id">解除绑定</a>
-                                @else
-                                <a href="{{route('oauth.login','qq')}}" onclick="layer.msg('正在绑定微博QQ', {icon:16, shade: 0.1, time:0})" class="acc-bind" type="qq_id">立即绑定</a>
-                                <span>，即可使用QQ帐号登录</span>
-                                @endif
-                            </li>
-                            <li class="fly-msg @if($user->weibo_id) app-havebind @endif">
-                                <i class="iconfont icon-weibo"></i>
-                                @if($user->weibo_id)
-                                <span>已成功绑定，您可以使用微博直接登录，当然，您也可以</span>
-                                <a href="{{route('oauth.login.unbind', 'weibo')}}" class="acc-unbind" type="weibo_id">解除绑定</a>
-                                @else
-                                <a href="{{route('oauth.login','weibo')}}" class="acc-weibo" type="weibo_id"  onclick="layer.msg('正在绑定微博', {icon:16, shade: 0.1, time:0})" >立即绑定</a>
-                                <span>，即可使用微博帐号登录</span>
-                                @endif
-                            </li>
+                            {{--<li class="fly-msg @if($user->qq_id) app-havebind @endif">--}}
+                                {{--<i class="iconfont icon-qq"></i>--}}
+                                {{--@if($user->qq_id)--}}
+                                {{--<span>已成功绑定，您可以使用QQ帐号直接登录，当然，您也可以</span>--}}
+                                {{--<a href="{{route('oauth.login.unbind', 'qq')}}" class="acc-unbind" type="qq_id">解除绑定</a>--}}
+                                {{--@else--}}
+                                {{--<a href="{{route('oauth.login','qq')}}" onclick="layer.msg('正在绑定微博QQ', {icon:16, shade: 0.1, time:0})" class="acc-bind" type="qq_id">立即绑定</a>--}}
+                                {{--<span>，即可使用QQ帐号登录</span>--}}
+                                {{--@endif--}}
+                            {{--</li>--}}
+                            {{--<li class="fly-msg @if($user->weibo_id) app-havebind @endif">--}}
+                                {{--<i class="iconfont icon-weibo"></i>--}}
+                                {{--@if($user->weibo_id)--}}
+                                {{--<span>已成功绑定，您可以使用微博直接登录，当然，您也可以</span>--}}
+                                {{--<a href="{{route('oauth.login.unbind', 'weibo')}}" class="acc-unbind" type="weibo_id">解除绑定</a>--}}
+                                {{--@else--}}
+                                {{--<a href="{{route('oauth.login','weibo')}}" class="acc-weibo" type="weibo_id"  onclick="layer.msg('正在绑定微博', {icon:16, shade: 0.1, time:0})" >立即绑定</a>--}}
+                                {{--<span>，即可使用微博帐号登录</span>--}}
+                                {{--@endif--}}
+                            {{--</li>--}}
                             <li class="fly-msg @if($user->github_id) app-havebind @endif">
                                 <i class="iconfont icon-github"></i>
                                 @if($user->github_id)

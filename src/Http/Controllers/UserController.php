@@ -101,27 +101,29 @@ class UserController extends Controller
     {
         $user = Auth::user();
         $data = $request->only('sex','introduction');
-        if( !$user->phone ){
 
-            $verifyData = \Cache::get('verificationCode_'.trim($request->phone));
-
-            if (!$verifyData) {
-                throw ValidationException::withMessages([
-                    'phone' => ['验证码已失效'],
-                ]);
-            }
-
-            if (!hash_equals($verifyData['code'], $request->verification_code)) {
-                // 返回401
-                throw ValidationException::withMessages([
-                    'phone' => ['验证码错误'],
-                ]);
-            }
-
-            \Cache::forget('verificationCode_'.trim($request->phone));
-
-            $data['phone'] = $verifyData['phone'];
-        }
+//        // 注释掉 手机功能
+//        if( !$user->phone ){
+//
+//            $verifyData = \Cache::get('verificationCode_'.trim($request->phone));
+//
+//            if (!$verifyData) {
+//                throw ValidationException::withMessages([
+//                    'phone' => ['验证码已失效'],
+//                ]);
+//            }
+//
+//            if (!hash_equals($verifyData['code'], $request->verification_code)) {
+//                // 返回401
+//                throw ValidationException::withMessages([
+//                    'phone' => ['验证码错误'],
+//                ]);
+//            }
+//
+//            \Cache::forget('verificationCode_'.trim($request->phone));
+//
+//            $data['phone'] = $verifyData['phone'];
+//        }
 
         if($request->email != $user->email){
             $data['email_is_activated'] = '0';
