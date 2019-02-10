@@ -16,7 +16,7 @@
          <div class="layui-row layui-col-space15">
             <div class="layui-col-md8">
                 <div class="fly-panel">
-                    <div class="fly-panel-title fly-filter"> <a>{{$title}}</a> <a href="#signin" class="layui-hide-sm layui-show-xs-block fly-right" id="LAY_goSignin" style="color: #FF5722;">去签到</a> </div>
+                    <div class="fly-panel-title fly-filter"> <a>{{$title}}</a> </div>
                     @if($articles->count())
                     <ul class="fly-list">
                         @foreach($articles as $index => $article)
