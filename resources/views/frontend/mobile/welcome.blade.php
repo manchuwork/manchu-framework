@@ -4,12 +4,10 @@
 @section('description', config('system.common.basic.description',''))
 @section('keywords', config('system.common.basic.index_keywords',''))
 
-@section('breadcrumb')
-@endsection
+{{--@section('breadcrumb')--}}
+{{--@endsection--}}
 
 @section('content')
-移动端端
-
     <div class="layui-container">
 
         {{--<div class="fly-panel">--}}
