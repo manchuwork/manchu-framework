@@ -12,10 +12,13 @@ $editor = config('administrator.editor', 'simditor');
 <script type="text/javascript"  src="{{ asset('vendor/laracms/plugins/editor/js/to-markdown.js') }}"></script>
 <script type="text/javascript"  src="{{ asset('vendor/laracms/plugins/editor/js/marked.min.js') }}"></script>
 <script type="text/javascript"  src="{{ asset('vendor/laracms/plugins/editor/js/simditor-markdown.js') }}"></script>
+<script type="text/javascript"  src="{{ asset('/vendor/laracms/plugins/editor/js/simditor-mark.js') }}"></script>
+
 <script>
     var $preview, editor, mobileToolbar, toolbar;
     Simditor.locale = 'en-US';
-    toolbar = ['title', 'bold', 'italic', 'underline', 'strikethrough', 'fontScale', 'color', '|', 'ol', 'ul', 'blockquote', 'code', 'table', '|', 'link', 'image', 'hr', '|', 'indent', 'outdent', 'alignment', '|', 'html', 'markdown'];
+    toolbar = [ 'title', 'bold', 'italic', 'underline', 'strikethrough', 'fontScale', 'color', '|', 'ol', 'ul', 'blockquote', 'code', 'table', '|', 'link', 'image', 'hr', '|', 'indent', 'outdent', 'alignment', '|', 'html', 'markdown',
+        '|','mark'];
     mobileToolbar = ["bold", "underline", "strikethrough", "color", "ul", "ol"];
     $(".editor").each(function(){
         Simditor.locale = 'zh-CN';

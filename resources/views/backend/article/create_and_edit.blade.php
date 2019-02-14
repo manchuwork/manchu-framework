@@ -7,6 +7,23 @@
     <li class="active">{{$title}}</li>
 @endsection
 
+<style>
+    mark{
+        font-family: 'Manchu Bold';
+        background-color: #f2f2f2;
+        writing-mode: vertical-lr;
+        -webkit-writing-mode: vertical-lr;
+        -moz-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+        display: inline-block;
+        word-wrap: break-word;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-size-adjust: 100%;
+        -webkit-text-orientation: sideways-right;
+        text-orientation: sideways-right;
+    }
+</style>
+
 @section('content')
     @php
         $object_id = $article->object_id ?? create_object_id();
