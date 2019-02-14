@@ -36,6 +36,19 @@
 
                 <!--- ///////////////////////////////////////////////////// -->
                 <div class="fly-panel detail-box" id="flyReply">
+                    @if($prev_article != null)
+                        <a href="{{$prev_article->getLink(request('navigation',0),request('articleCategory',0))}}">
+                            上一篇：{{ $prev_article->title  }}
+                        </a>
+                    @endif
+                    &nbsp;
+                        &nbsp;&nbsp;
+                    @if($next_article != null)
+                        <a href="{{$next_article->getLink(request('navigation',0),request('articleCategory',0))}}">
+                            下一篇：{{ $next_article->title  }}
+                        </a>
+                    @endif
+
                     <fieldset class="layui-elem-field layui-field-title" style="text-align: center;">
                         <legend>回复</legend>
                     </fieldset>

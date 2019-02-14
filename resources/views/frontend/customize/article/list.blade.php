@@ -22,7 +22,7 @@
                         @foreach($articles as $index => $article)
                         <li>
                             <a href="{{$article->getLink(request('navigation',0),request('articleCategory',0))}}" class="fly-avatar">
-                                <img src="{{ storage_image_url($article->thumb) }}" alt="interlij">
+                                <img src="{{ storage_image_url($article->thumb) }}" alt="{{ $article->title  }}">
                             </a>
                             <h2>
                                 {{--<a class="layui-badge">最新</a>--}}

@@ -75,7 +75,9 @@ class ArticleController extends Controller
         $article = $safeArticle;
         $article->increment('views');
 
-        return frontend_view('article.'.$article->getTemplate($category), compact('article'));
+        $prev_article = Article::where('id','<',$article->id)->orderBy('order','desc')->first();
+        $next_article = Article::where('id','>',$article->id)->orderBy('order','asc')->first();
+        return frontend_view('article.'.$article->getTemplate($category), compact('article','prev_article', 'next_article','navigation'));
     }
 
 }
