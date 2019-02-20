@@ -1956,7 +1956,7 @@ Toolbar = (function(superClass) {
     })(this));
     if (!this.opts.toolbarHidden && this.opts.toolbarFloat) {
       this.wrapper.css('top', this.opts.toolbarFloatOffset);
-        this.wrapper.css('z-index', 100);
+      this.wrapper.css('z-index', 100000);
       toolbarHeight = 0;
       initToolbarFloat = (function(_this) {
         return function() {
