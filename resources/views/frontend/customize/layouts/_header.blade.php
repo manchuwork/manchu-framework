@@ -69,6 +69,20 @@ $currentChildNavigations = frontend_current_child_navigation('desktop');
     </div>
 </div>
 
+<div class="fly-panel fly-column">
+    <div class="layui-container">
+        <ul class="layui-clear">
+            @foreach($navigations as $navigation)
+                <li><a target="{{ $navigation->target }}" href="{{$navigation->link}}"> {{ $navigation->title }} </a></li>
+                @if($navigation->child)
+                    @foreach($navigation->child as $nav)
+                        <li><a target="{{ $navigation->target }}" href="{{$nav->link}}"> {{ $nav->title }} </a></li>
+                    @endforeach
+                @endif
+            @endforeach
+        </ul>
+    </div>
+</div>
 
 @if($breadcrumb ?? true)
 <div class="fly-panel fly-column">

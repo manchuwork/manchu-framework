@@ -58,8 +58,6 @@ $currentChildNavigations = frontend_current_child_navigation('desktop');
 <div class="fly-panel fly-column">
     <div class="layui-container">
         <ul class="layui-clear">
-            {{--<li class="layui-hide-xs  layui-this"><a href="/">首页</a></li>--}}
-            {{--<li><a href="/column/quiz/"> 提问 </a></li>--}}
             @foreach($navigations as $navigation)
                 <li><a target="{{ $navigation->target }}" href="{{$navigation->link}}"> {{ $navigation->title }} </a></li>
                 @if($navigation->child)
