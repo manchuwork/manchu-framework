@@ -356,11 +356,6 @@
     padding:0 10px 8px;
     background-color: #fff;
 
-    font-family: 'Manchu Bold';
-    font-size: 0.5em;
-    background-color: #f2f2f2;
-    height: calc(100% - 10px);
-
     writing-mode: vertical-lr;
     -webkit-writing-mode: vertical-lr;
     -moz-writing-mode: vertical-lr;
