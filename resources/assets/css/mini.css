@@ -308,3 +308,71 @@
 #icIBahyI-main_cont .icIBahyI-li_dd{color:#777px;}
 
 #ICIBA_TOO_LONG{padding-top:10px;padding-left:10px;font-size:12px;}
+
+.mnc {
+    font-family: 'Manchu Bold';
+    font-size: 1em;
+    -webkit-text-orientation: sideways-right;
+    text-orientation: sideways-right;
+}
+
+.en{
+    font-size: 0.6em;
+    font-family: 'arial,sans-serif';
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -webkit-text-orientation: sideways-right;
+    text-orientation: sideways-right;
+}
+
+.mnc-trans{
+    font-size: 0.6em;
+    font-family: 'Manchu Trans';
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -webkit-text-orientation: upright;
+    text-orientation: upright;
+
+}
+
+.mnc-trans-blod{
+    font-size: 0.6em;
+    font-family: 'Manchu Trans Bold';
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -webkit-text-orientation: sideways-right;
+    text-orientation: sideways-right;
+
+}
+
+.zh{
+    font-size: 0.7em;
+    font-family: 'arial,sans-serif';
+    -webkit-text-orientation: upright;
+    text-orientation: upright;
+}
+
+#icIBahyI-dict_main{
+    padding:0 10px 8px;
+    background-color: #fff;
+
+    font-family: 'Manchu Bold';
+    font-size: 0.5em;
+    background-color: #f2f2f2;
+    height: calc(100% - 10px);
+
+    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+    -moz-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+
+    display: inline-block;
+    word-wrap: break-word;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -webkit-text-orientation: sideways-right;
+    text-orientation: sideways-right;
+    font-family: 'arial,sans-serif';
+
+}

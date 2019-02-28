@@ -1,9 +1,9 @@
 //var iciba_huaci_url ="http://open.iciba.com/huaci/";
 //var iciba_huaci_url ="http://open.iciba.com/huaci/";
 var iciba_huaci_url = "http://www.manchu.work/";
-//var iciba_huaci_url_new = "/";//"http://open.iciba.com/huaci_v3/";
+var iciba_huaci_url_new = "http://www.manchu.work/";//"http://open.iciba.com/huaci_v3/";
 var ICIBA_HUAYI_Str = '';
-//var ICIBA_HUAYI_ALLOW = 1;
+var ICIBA_HUAYI_ALLOW = 1;
 ICIBA_HUAYI_Str += '<link type="text/css" rel="stylesheet" href="'+iciba_huaci_url+'css/mini" />';
 ICIBA_HUAYI_Str += '<div id="icIBahyI-yi" style="display:none"></div>';
 ICIBA_HUAYI_Str += '<div id="icIBahyI-main_box" style="display:none">';
