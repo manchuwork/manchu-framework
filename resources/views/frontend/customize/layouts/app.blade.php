@@ -10,9 +10,7 @@
         <meta name="Keywords" content="{{ config('system.common.basic.keywords','') }}@hasSection('keywords') ,@endif @yield('keywords')">
         {!! config('system.common.basic.meta','') !!}
         <script>
-            window.Laravel = {!! json_encode([
-            'csrfToken' => csrf_token()
-        ]) !!};
+            window.Laravel = {!! json_encode(['csrfToken' => csrf_token()]) !!};
         </script>
         <!-- Fonts -->
 
@@ -34,9 +32,10 @@
                     @yield('tab')
                     {{--@include('frontend::layouts._breadcrumb')--}}
                     @yield('content')
+
                 </div>
             </div>
-
+            @include('frontend::layouts._share')
             @include('frontend::layouts._footer')
         </div>
 

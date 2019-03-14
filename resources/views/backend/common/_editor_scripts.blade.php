@@ -34,6 +34,7 @@ $editor = config('administrator.editor', 'simditor');
             },
             pasteImage: true,
             toolbar:toolbar,
+            iframe:['src','scrolling','border','frameborder','framespacing','allowfullscreen','width','height'],
             locale:'zh-CN',
         });
     });

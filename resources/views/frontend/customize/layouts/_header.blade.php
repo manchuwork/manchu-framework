@@ -13,18 +13,18 @@ $currentChildNavigations = frontend_current_child_navigation('desktop');
         <ul class="layui-nav fly-nav layui-hide-xs">
             <li class="layui-nav-item"><a href="/">首页</a></li>
 
-            @foreach($navigations as $navigation)
-            <li class="layui-nav-item">
-                <a target="{{ $navigation->target }}" href="{{$navigation->link}}">{{ $navigation->title }}</a>
-                @if($navigation->child)
-                <dl class="layui-nav-child">
-                    @foreach($navigation->child as $nav)
-                    <dd><a target="{{ $navigation->target }}" href="{{$nav->link}}">{{ $nav->title }}</a></dd>
-                    @endforeach
-                </dl>
-                @endif
-            </li>
-            @endforeach
+            {{--@foreach($navigations as $navigation)--}}
+            {{--<li class="layui-nav-item">--}}
+                {{--<a target="{{ $navigation->target }}" href="{{$navigation->link}}">{{ $navigation->title }}</a>--}}
+                {{--@if($navigation->child)--}}
+                {{--<dl class="layui-nav-child">--}}
+                    {{--@foreach($navigation->child as $nav)--}}
+                    {{--<dd><a target="{{ $navigation->target }}" href="{{$nav->link}}">{{ $nav->title }}</a></dd>--}}
+                    {{--@endforeach--}}
+                {{--</dl>--}}
+                {{--@endif--}}
+            {{--</li>--}}
+            {{--@endforeach--}}
         </ul>
 
         <ul class="layui-nav fly-nav-user">

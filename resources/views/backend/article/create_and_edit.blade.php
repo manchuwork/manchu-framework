@@ -3,7 +3,7 @@
 @section('title', $title = $article->id ? '编辑' : '添加' )
 
 @section('breadcrumb')
-    <li><a href="javascript:;">内容管理</a></li>
+    <li><a href="/administrator/articles?type=article">内容管理</a></li>
     <li class="active">{{$title}}</li>
 @endsection
 
@@ -121,7 +121,7 @@
                         <div class="form-group has-feedback has-icon-right">
                             <label class="col-md-2 col-sm-2 control-label required">排序</label>
                             <div class="col-md-5 col-sm-10">
-                            <input type="number" name="order" autocomplete="off" class="form-control" value="{{ old('order',$article->order) }}"
+                            <input type="number" name="order" autocomplete="off" class="form-control" @if(!empty($article->order)) value="{{ old('order',$article->order) }}" @else value="1" @endif
                                    required
                                    data-fv-trigger="blur"
                                    min="1"
@@ -149,7 +149,7 @@
                             <div class="col-md-5 col-sm-10">
                             <div class="radio">
                                 <label class="radio-inline">
-                                    <input type="radio" name="is_link" value="0" @if($article->is_link == '0') checked="" @endif required> 内链
+                                    <input type="radio" name="is_link" value="0" @if($article->is_link == '0') checked="" @elseif($article->is_link == '1')   @else checked="true" @endif required> 内链
                                 </label>
                                 <label class="radio-inline">
                                     <input type="radio" name="is_link" value="1" @if($article->is_link == '1') checked="" @endif required> 外链
@@ -176,7 +176,7 @@
                                     <input type="radio" name="status" value="0" @if($article->status == 0) checked="" @endif required > 隐藏
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="status" value="1" @if($article->status == 1) checked="" @endif required > 显示
+                                    <input type="radio" name="status" value="1" @if($article->status == 1) checked="" @elseif($article->status == 0)   @else checked="true"  @endif required > 显示
                                 </label>
                             </div>
                             </div>
