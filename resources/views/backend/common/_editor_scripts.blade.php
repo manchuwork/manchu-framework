@@ -14,6 +14,7 @@ $editor = config('administrator.editor', 'simditor');
 <script type="text/javascript"  src="{{ asset('vendor/laracms/plugins/editor/js/simditor-markdown.js') }}"></script>
 <script type="text/javascript"  src="{{ asset('/vendor/laracms/plugins/editor/js/simditor-mark.js') }}"></script>
 <script type="text/javascript"  src="{{ asset('/vendor/laracms/plugins/editor/js/simditor-fullscreen.js') }}"></script>
+<script type="text/javascript"  src="{{ asset('/vendor/laracms/plugins/editor/js/simditor-dropzone.js') }}"></script>
 
 <script>
     var $preview, editor, mobileToolbar, toolbar;
