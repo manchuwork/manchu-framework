@@ -34,8 +34,8 @@ $editor = config('administrator.editor', 'simditor');
             },
             pasteImage: true,
             toolbar:toolbar,
-            allowedTags:['iframe','mark','br', 'span', 'a', 'img', 'b', 'strong', 'i', 'strike', 'u', 'font', 'p', 'ul', 'ol', 'li', 'blockquote', 'pre', 'code', 'h1', 'h2', 'h3', 'h4', 'hr'],
-            iframe:['src','scrolling','border','frameborder','framespacing','allowfullscreen','width','height'],
+            allowedTags: ['iframe', 'mark'],
+            allowedAttributes: {iframe: ['src', 'scrolling', 'border', 'frameborder', 'framespacing', 'allowfullscreen', 'width', 'height']},
             locale:'zh-CN',
         });
     });
