@@ -35,10 +35,11 @@ $editor = config('administrator.editor', 'simditor');
             },
             pasteImage: true,
             toolbar:toolbar,
-            allowedTags: ['iframe', 'mark','audio'],
+            allowedTags: ['iframe', 'mark','audio','source'],
             allowedAttributes: {
                 iframe: ['src', 'scrolling', 'border', 'frameborder', 'framespacing', 'allowfullscreen', 'width', 'height'],
-                audio:['src','controls','autoplay','loop','preload']
+                audio:['src','controls','autoplay','loop','preload'],
+                source:['src','type']
             },
             locale:'zh-CN',
         });
