@@ -41,8 +41,8 @@
 
         <!-- Scripts -->
         <script src="{{asset('vendor/laracms/plugins/layui/layui.all.js')}}"></script>
-        <script src="{{asset('vendor/laracms/js/audioplayer.min.js')}}"></script>
         <script src="{{asset('vendor/laracms/js/website.js')}}"></script>
+        <script src="{{asset('vendor/laracms/js/audioplayer.min.js')}}"></script>
 
         @include('frontend::layouts._message')
 
