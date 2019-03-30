@@ -13,7 +13,4 @@
     }).extend({
         fly: 'index'
     }).use(['fly']);
-
-    jQuery( function() {jQuery( 'audio' ).audioPlayer();});
-
 </script>
