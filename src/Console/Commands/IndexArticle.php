@@ -70,7 +70,7 @@ class IndexArticle extends Command
         $tnt->setTokenizer(new TokenizerHandler(config('scout.tntsearch.tokenizer.jieba')));
         $tnt->setDatabaseHandle(app('db')->connection()->getPdo());
 
-        $indexer = $tnt->createIndex('articles.index');
+        $indexer = $tnt->createIndex(config('scout.prefix') . 'articles.index');
         $indexer->query("SELECT id, alias, title, subtitle, keywords, description, author, content FROM {$table}");
 //        $indexer->setLanguage('no');
         $indexer->run();
