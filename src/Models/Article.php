@@ -57,7 +57,7 @@ class Article extends Model
     {
         parent::boot();
         static::addGlobalScope('type', function (Builder $builder) {
-            $builder->where('type', '=', request('type','article'));
+            $builder->where('articles.'.'type', '=', request('type','article'));
             $builder->with(['created_user','updated_user']);
         });
     }
