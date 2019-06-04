@@ -1,15 +1,10 @@
 @extends('frontend::layouts.app')
-
 @section('title', $title = '首页' )
 @section('description', config('system.common.basic.description',''))
 @section('keywords', config('system.common.basic.index_keywords',''))
-
 @section('breadcrumb')
 @endsection
-
 @section('content')
-
-
     <div class="layui-container">
 
         {{--<div class="fly-panel">--}}
@@ -46,7 +41,6 @@
                         <div class="laypage-main"> <a href="{{$block->more_link}}" class="laypage-next">{{$block->more_title}}</a> </div>
                     </div>
                 </div>
-
                 {{--<!----}}
                 {{--<div class="fly-panel">--}}
                     {{--<div class="fly-panel-title fly-filter">--}}
@@ -77,7 +71,6 @@
                 {{---->--}}
 
             </div>
-
             <div class="layui-col-md6">
                 @php
                     $block = get_block("2018_03_04_235036_index_case_news_block");
@@ -97,17 +90,12 @@
                     </div>
                 </div>
             </div>
-
             <div class="layui-col-md4">
                 @include('frontend::layouts._side')
             </div>
-
-
         </div>
     </div>
-
 @endsection
-
 {{--@section('scripts')--}}
     {{--<script>--}}
         {{--layui.use(['carousel', 'form'], function(){--}}
