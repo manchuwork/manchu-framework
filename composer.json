@@ -50,7 +50,8 @@
         "vinkla/hashids": "^5.1",
         "zhuzhichao/ip-location-zh": "^2.4",
         "anchnet/aliyun-openapi-php-sdk": "dev-master",
-        "hisorange/browser-detect": "^3.1"
+        "hisorange/browser-detect": "^3.1",
+        "jasny/sso": "^0.3.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~7.0",
